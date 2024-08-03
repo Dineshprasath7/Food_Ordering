@@ -20,9 +20,8 @@
     background-color: #e2e2e2;
     border: none;
 }
-.cart-items-item cross{
+.cart-items-title .cross{
     cursor: pointer;
-
 }
 .cart-bottom{
     margin-top: 80px;

@@ -1,8 +1,8 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    background: url('C:\Users\MUTHU MEENAKSHI\OneDrive\Desktop\Food_Ordering\frontend\src\assets\header_img.png') no-repeat;
+    background-size: cover;
     position: relative;
 }   
 .header-contents{
