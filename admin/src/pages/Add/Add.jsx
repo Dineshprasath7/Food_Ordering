@@ -32,13 +32,16 @@ const Add = () => {
                 name:"",
                 description:"",
                 price:"",
-                category:"Salad"
-            })
+                category:"Salad"})
+                setImage(false)
         }
+        
         else{
-            setImage(false)
+
         }
     }
+
+    
   return (
     <div className='add'>
       <form className='flex-col' onSubmit={onSubmitHandler}>
