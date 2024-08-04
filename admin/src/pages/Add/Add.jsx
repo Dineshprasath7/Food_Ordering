@@ -18,6 +18,7 @@ const Add = () => {
         const value = event.target.value;
         setData(data=>({...data,[name]:value}))
     }
+
     const onSubmitHandler = async (event) => {
         event.preventDefault();
         const formData = new FormData();
@@ -26,21 +27,20 @@ const Add = () => {
         formData.append("price",Number(data.price))
         formData.append("category",data.category)
         formData.append("image",image)
-        const response = await axios.post(`$(url)/api/food/Add`,formData)
-        if(response.data.success){
+        const response = await axios.post(`${url}/api/food/add`,formData);
+        if (response.data.success){
             setData({
                 name:"",
                 description:"",
                 price:"",
-                category:"Salad"})
-                setImage(false)
+                category:"Salad"
+            })
+            setImage(false)
         }
-        
         else{
 
         }
     }
-
     
   return (
     <div className='add'>
