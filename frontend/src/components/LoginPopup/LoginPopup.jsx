@@ -40,12 +40,10 @@ const LoginPopup = ({setShowLogin}) => {
             setShowLogin(false)
         }
         else{
-            alert(response.data.storage)
+            alert(response.data.message)
         }
 
     }
-
-
     
   return (
     <div className='login-popup'>
