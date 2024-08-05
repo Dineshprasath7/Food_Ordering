@@ -59,9 +59,7 @@ const StoreContextProvider = (props) => {
     },[])
 
     const contextValue = {
-        food_
-        async function loadData(){
-        await list,
+        list,
         cartItems,
         setCartItems,
         addToCart,
